@@ -30,6 +30,7 @@ def tic_tac_toe():
             row = input("That selection was invalid, please pick another one.")
         
         print(f"Player {current_player}, enter your desired column. Use T/t for top, M/m for middle, B/b for bottom.")
+        col = input()
         while(input() not in ['T', 't', 'M', 'm', 'B', 'b']):
             print("That selection was invalid, please pick another one.")
 
