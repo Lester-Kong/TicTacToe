@@ -25,9 +25,9 @@ def tic_tac_toe():
     while(True):
         print_board(board)
         print(f"Player {current_player}, enter your desired row. Use L/l for left, M/m for middle, R/r for right.")
-
-        while(input() not in ['L', 'l', 'M', 'm', 'R', 'r']):
-            print("That selection was invalid, please pick another one.")
+        row = input()
+        while(row not in ['L', 'l', 'M', 'm', 'R', 'r']):
+            row = input("That selection was invalid, please pick another one.")
         
         print(f"Player {current_player}, enter your desired column. Use T/t for top, M/m for middle, B/b for bottom.")
         while(input() not in ['T', 't', 'M', 'm', 'B', 'b']):
@@ -35,4 +35,4 @@ def tic_tac_toe():
 
 if __name__ == "__main__":
     tic_tac_toe()
-    #testing
+    
